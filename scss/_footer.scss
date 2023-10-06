@@ -1,0 +1,21 @@
+@mixin back {
+    background-color: $color-naranja;
+    color: $color-blanco;
+}
+
+footer {
+    @include back;
+}
+
+.botonFooter {
+    @include back;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $color-blanco;
+        color: $color-naranja;
+        border-radius: 10px;
+    }
+}
